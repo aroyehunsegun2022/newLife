@@ -6,7 +6,7 @@ import madein from "../../assets/madeinn.jpg"
 import discuss from "../../assets/discuss.jpg"
 import celebrity from "../../assets/celebrity.jpg"
 import "./activitiesbody.css"
-
+ 
 const Activitiesbody = () => {
   return (
     <div className='er__activitiesbody'>

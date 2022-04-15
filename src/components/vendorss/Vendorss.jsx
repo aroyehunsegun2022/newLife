@@ -1,8 +1,8 @@
 import React from 'react'
 import CircleIcon from '@mui/icons-material/Circle';
-import "./sponsors.css"
+import "./vendorss.css" 
 
-const Sponsors = (props) => {
+const Vendorss = (props) => {
   return (
     <div className='er__sponsors'>
         <h4>{props.title}</h4>
@@ -13,9 +13,9 @@ const Sponsors = (props) => {
             <p><CircleIcon sx={{ fontSize: 12 }} /> {props.list4}</p>
             <p><CircleIcon sx={{ fontSize: 12 }} /> {props.list5}</p>
         </div>
-       <a href='https://docs.google.com/forms/d/e/1FAIpQLSf-g85wcT2g3NuMRZ8KIbyas8MKiIhfK3ET2Agggx3cnqaCkA/viewform?embedded=true' className='linkk'>Partner</a>
+       <a href='https://docs.google.com/forms/d/e/1FAIpQLSdsoQcGspmd0kVKqUIkldqocFFjIOL1uU63F9a6d9R3nXTLrQ/viewform?embedded=true' className='linkk'>Partner</a>
     </div>
-  )
+  ) 
 }
-export default Sponsors
+export default Vendorss
 

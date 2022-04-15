@@ -1,7 +1,8 @@
 import React from 'react'
+import Vendorss from '../../components/vendorss/Vendorss'
 import { Sponsors } from "../../components"
 import "./partnerwithlife.css"
-
+ 
 const Partnerwithlife = () => {
   return (
     <div className='er__partnerwithlife'>
@@ -9,9 +10,10 @@ const Partnerwithlife = () => {
         <div className='sponsor-vendor'>
             <Sponsors title='SPONSORS' list1='Vulputate nunc urna adipiscing quam pharetra sed.' list2='Vulputate nunc urna adipiscing quam pharetra sed.'
                 list3='Vulputate nunc urna adipiscing quam pharetra sed.' list4='Vulputate nunc urna adipiscing quam pharetra sed.' list5='Vulputate nunc urna adipiscing quam pharetra sed.' />
-            <Sponsors title='VENDORS' list1='Vulputate nunc urna adipiscing quam pharetra sed.' list2='Vulputate nunc urna adipiscing quam pharetra sed.'
+            <Vendorss title='VENDORS' list1='Vulputate nunc urna adipiscing quam pharetra sed.' list2='Vulputate nunc urna adipiscing quam pharetra sed.'
                 list3='Vulputate nunc urna adipiscing quam pharetra sed.' list4='Vulputate nunc urna adipiscing quam pharetra sed.' list5='Vulputate nunc urna adipiscing quam pharetra sed.' />
         </div>
+        
     </div>
   )
 }
