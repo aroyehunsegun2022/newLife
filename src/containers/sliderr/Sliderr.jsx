@@ -34,11 +34,19 @@ const Sliderr = () => {
     };
   return (
     <div className='er__slider'>
+        <div  className='er__slider1'>
         <Slider {...settings}>
-              <Sliderbox grad='166.16deg, rgba(251, 218, 97, 0.48) 25.1%, #EC5B08 69.93%' imagee={njaflavors} header='NAIJA FLAVOURS' ptext='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum ut at senectus bibendum.' />
+              <Sliderbox  grad='166.16deg, rgba(251, 218, 97, 0.48) 25.1%, #EC5B08 69.93%' imagee={njaflavors} header='NAIJA FLAVOURS' ptext='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum ut at senectus bibendum.' />
               <Sliderbox grad='360deg, #00003D 11.44%, rgba(0, 0, 61, 0) 97.51%' imagee={discuss9ja} header='DISCUSS NIGERIA' ptext='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum ut at senectus bibendum.' />
-              <Sliderbox grad='284.39deg, #D24074 37.18%, rgba(101, 24, 180, 0.44) 84.77%' imagee={children} header="CHILDREN'S WONDERLAND" ptext='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum ut at senectus bibendum.' />
+              <Sliderbox className='er__slider3' grad='284.39deg, #D24074 37.18%, rgba(101, 24, 180, 0.44) 84.77%' imagee={children} header="CHILDREN'S WONDERLAND" ptext='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum ut at senectus bibendum.' />
         </Slider>
+        </div>
+        <div className='er__slider2'>
+        <Slider {...settings}>
+              <Sliderbox  grad='166.16deg, rgba(251, 218, 97, 0.48) 25.1%, #EC5B08 69.93%' imagee={njaflavors} header='NAIJA FLAVOURS' ptext='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum ut at senectus bibendum.' />
+              <Sliderbox grad='360deg, #00003D 11.44%, rgba(0, 0, 61, 0) 97.51%' imagee={discuss9ja} header='DISCUSS NIGERIA' ptext='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum ut at senectus bibendum.' />
+        </Slider>
+        </div>
     </div>
   )
 }

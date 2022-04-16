@@ -41,5 +41,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "react-player": "^2.10.0",
+    "react-slick": "^0.28.1"
   }
 }
