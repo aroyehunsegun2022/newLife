@@ -1,4 +1,4 @@
-.er__daynight{
+.er__daynight {
     background: #FFFFFF;
     box-shadow: 0px 4px 40px rgba(89, 89, 89, 0.1);
     border-radius: 30px;
@@ -7,14 +7,20 @@
     padding: 1rem;
     margin-top: 6rem
 }
-.right{
+
+img {
+    object-fit: cover;
+}
+
+.right {
     display: flex;
     align-items: center;
     background: linear-gradient(135deg, #FBDA61 2.88%, #F76B1C 98.13%);
     border-radius: 20px;
     padding: 1rem 3rem;
 }
-.right h5{
+
+.right h5 {
     font-family: dosis-extrabold;
     font-style: normal;
     font-weight: 800;
@@ -24,11 +30,13 @@
     color: #333333;
     margin-left: 1rem;
 }
-.left{
+
+.left {
     display: flex;
     align-items: center;
 }
-.left h5{
+
+.left h5 {
     font-family: dosis-extrabold;
     font-style: normal;
     font-weight: 800;
@@ -41,33 +49,34 @@
 }
 
 @media screen and (max-width: 1100px) {
-    .right{
+    .right {
         padding: 1rem 2rem;
     }
-    .right h5{
+    .right h5 {
         font-size: 17px;
         line-height: 27px;
         margin-left: 1rem;
     }
-    .left h5{
+    .left h5 {
         font-size: 17px;
         line-height: 27px;
         margin-left: 1rem;
     }
 }
+
 @media screen and (max-width: 800px) {
-    .er__daynight{
+    .er__daynight {
         padding: 0.7rem;
     }
-    .right{
+    .right {
         padding: 0.8rem 1.5rem;
     }
-    .right h5{
+    .right h5 {
         font-size: 15px;
         line-height: 27px;
         margin-left: 0.8rem;
     }
-    .left h5{
+    .left h5 {
         font-size: 15px;
         line-height: 27px;
         margin-left: 0.8rem;
@@ -75,19 +84,19 @@
 }
 
 @media screen and (max-width: 500px) {
-    .er__daynight{
+    .er__daynight {
         padding: 0.5rem;
         margin-top: 2rem;
     }
-    .right{
+    .right {
         padding: 0.5rem;
     }
-    .right h5{
+    .right h5 {
         font-size: 8px;
         line-height: 5px;
         margin-left: 0.5rem;
     }
-    .left h5{
+    .left h5 {
         font-size: 8px;
         line-height: 5px;
         margin-left: 0.5rem;
@@ -95,18 +104,18 @@
 }
 
 @media screen and (max-width: 400px) {
-    .er__daynight{
+    .er__daynight {
         padding: 0.5rem;
     }
-    .right{
+    .right {
         padding: 0.5rem;
     }
-    .right h5{
+    .right h5 {
         font-size: 7px;
         line-height: 5px;
         margin-left: 0.2rem;
     }
-    .left h5{
+    .left h5 {
         font-size: 7px;
         line-height: 5px;
         margin-left: 0.2rem;

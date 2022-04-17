@@ -1,8 +1,46 @@
-import React from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import { Timer } from "../../components"
 import "./countdown.css"
 
+
 const countdown = () => {
+  const [timerDays, setTimerDays] = useState('00');
+  const [timerHours, setTimerHours] = useState('00');
+  const [timerMinutes, setTimerMinutes] = useState('00');
+  const [timerSeconds, setTimerSeconds] = useState('00');
+
+  let interval = useRef();
+
+  const startTimer = () =>{
+    const countdownDate = new Date('September 30, 2022 00:00:00').getTime();
+    interval = setInterval(() => {
+       const now = new Date().getTime();
+       const distance = countdownDate - now;
+       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+       const hours = Math.floor((distance % (1000 * 60 * 60 * 24) /(1000 * 60 * 60)));
+       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+       if(distance < 0){
+          //stop our timer
+          clearInterval(interval.current);
+       } else {
+           //update our time
+           setTimerDays(days);
+           setTimerHours(hours);
+           setTimerMinutes(minutes);
+           setTimerSeconds(seconds);
+       }
+    }, 1000);
+  }
+
+  //componentDidMount 
+  useEffect(()=>{
+    startTimer();
+    return () => {
+      clearInterval(interval.current);
+    }
+  })
   return (
     <div className='life__countdown'>
         <div className='life__countdown-content'>
@@ -10,11 +48,11 @@ const countdown = () => {
             <h3>COUNTDOWN TO LIFE!</h3>
         </div>
         <div className='life__countdown-count'>
-            <Timer number='1' time='Months' />
-            <Timer number='2' time='Days'  />
-            <Timer number='3' time='Hours' />
-            <Timer number='4' time='Minutes' />
-            <Timer number='5' time='Seconds' />
+            <Timer number='5' time='Months' />
+            <Timer number={timerDays} time='Days'  />
+            <Timer number={timerHours} time='Hours' />
+            <Timer number={timerMinutes} time='Minutes' />
+            <Timer number={timerSeconds} time='Seconds' />
         </div>
     </div>
   )

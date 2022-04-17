@@ -26,7 +26,7 @@ const Sliderr = () => {
       dots: false,
       infinite: false,
       speed: 500,
-      slidesToShow: 2.5,
+      slidesToShow: 3,
       slidesToScroll: 1,
       initialSlide: 0,
       prevArrow: <SlickArrowLeft />,
